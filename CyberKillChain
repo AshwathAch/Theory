@@ -1,0 +1,45 @@
+1. Reconnaissance --> The attacker gathers information about the target to identify vulnerabilities.
+  Open Source Intelligence (OSINT) Tools
+    theHarvester  : Collects emails, subdomains, IPs, and usernames from public sources like Google, Bing, and Shodan.
+    Network Scanning Tools  : Nmap, ZenMap
+  DNS and Subdomain Enumeration Tools
+    DNSRecon  :  Performs DNS enumeration, zone transfers, and record lookups.
+    Sublist3r  :  Discovers subdomains using search engines and brute-forcing.
+  Social Engineering and Email Harvesting
+    Hunter.io  :  Finds email addresses associated with a domain.  Example: Searching for *@example.com.
+    Social-Engineer Toolkit (SET)  :  Automates phishing and other social engineering attacks.
+  Defensive Actions  : 
+    Monitor and detect unusual network scanning - Snort, Suricata
+    Limit Publicly Available Information - Use tools like FOCA to identify metadata leaks.
+    Protect DNS and Subdomains. 
+    Harden Network Perimeters : Close unused ports on firewalls and routers. - Nessus, Shodan Monitor
+    Monitor Reconnaissance Activity  :  Monitor DNS requests for your domain to detect enumeration attempts.
+
+2. Weaponization --> The attacker creates a payload and pairs it with a delivery method.
+    Exploit Frameworks - Metasploit, Cobalt-Strike, Exploit DB
+    Payload Generators - MSFVenom
+    Malware Development Tools - Mimikatz : Extract credentials, Shellter: Injects shellcode, TheFatRat: Generates undetectable backdoors.
+    Obfuscation and Evasion Tools - Obfuscator.io : Obfuscates JavaScript code.
+  Defensive Actions  :
+    Patch Known Vulnerabilities  :  Regularly update software, operating systems, and firmware. - Qualys and Nessus
+    Limit Payload Execution  :  Disable scripting engines where possible.
+    Detect and Block Obfuscated Payloads Analyze suspicious files or scripts. - YARA, Symson
+    Use Endpoint Protection Enable real-time protection for file changes and script execution. - CrowdStrike Falcon, SentinelOne.
+    Employ Sandboxing Automatically detonate suspicious file. - Cuckoo Sandbox, Joe Sandbox
+    Monitor and Filter Network Traffic
+
+3. Delivery --> The attacker delivers the weaponized payload to the target.
+  Phishing Tools - Social-Engineer Toolkit, Gophish, 
+  Exploit Delivery Tools - Metasploit Framework  :  Delivers exploits to systems via known vulnerabilities
+  File-Based Delivery Tools - MacroPack : Generates Office documents.
+  Drive-By Delivery Tools - Blackhole Exploit Kit : Targets outdated browsers and plugins via malicious websites.
+  USB-Based Delivery - BadUSB, Rubber Ducky.
+Defensive Actions  :
+  Secure Email Gateways - Microsoft Defender for Office 365, Proofpoint and Mimecast
+  Implement Attachment Controls - Block or filter executable files - FireEye Email Threat Prevention
+  Detect and Block Malicious Links - Use URL filtering to block access - Cisco umbrella
+  Block Physical Deliveries - Disable autorun for removable drives - CrowdStrike, or Carbon Black.
+
+4. Exploitation  --> The payload exploits a vulnerability to execute the attack
+  
+  
