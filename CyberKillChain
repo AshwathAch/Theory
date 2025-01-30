@@ -29,17 +29,29 @@
     Monitor and Filter Network Traffic
 
 3. Delivery --> The attacker delivers the weaponized payload to the target.
-  Phishing Tools - Social-Engineer Toolkit, Gophish, 
-  Exploit Delivery Tools - Metasploit Framework  :  Delivers exploits to systems via known vulnerabilities
-  File-Based Delivery Tools - MacroPack : Generates Office documents.
-  Drive-By Delivery Tools - Blackhole Exploit Kit : Targets outdated browsers and plugins via malicious websites.
-  USB-Based Delivery - BadUSB, Rubber Ducky.
-Defensive Actions  :
-  Secure Email Gateways - Microsoft Defender for Office 365, Proofpoint and Mimecast
-  Implement Attachment Controls - Block or filter executable files - FireEye Email Threat Prevention
-  Detect and Block Malicious Links - Use URL filtering to block access - Cisco umbrella
-  Block Physical Deliveries - Disable autorun for removable drives - CrowdStrike, or Carbon Black.
+    Phishing Tools - Social-Engineer Toolkit, Gophish, 
+    Exploit Delivery Tools - Metasploit Framework  :  Delivers exploits to systems via known vulnerabilities
+    File-Based Delivery Tools - MacroPack : Generates Office documents.
+    Drive-By Delivery Tools - Blackhole Exploit Kit : Targets outdated browsers and plugins via malicious websites.
+    USB-Based Delivery - BadUSB, Rubber Ducky.
+  Defensive Actions  :
+    Secure Email Gateways - Microsoft Defender for Office 365, Proofpoint and Mimecast
+    Implement Attachment Controls - Block or filter executable files - FireEye Email Threat Prevention
+    Detect and Block Malicious Links - Use URL filtering to block access - Cisco umbrella
+    Block Physical Deliveries - Disable autorun for removable drives - CrowdStrike, or Carbon Black.
 
 4. Exploitation  --> The payload exploits a vulnerability to execute the attack
-  
-  
+    Web Exploitation Tools - SqLmap, Burpsuite, OWASP ZAP.
+    Privilege Escalation Tools - Winpeas, Linpeas, PowerSlpoit.
+    Exploiting Known Vulnerabilities - DirtyPipe, EternalBlue.
+    Exploitation of Misconfigurations - Responder, Impacket.
+    Wireless Exploitation - Aircrack-ng, Wifite.
+  Defensive Actions  :
+    Regularly Patch Vulnerabilities - Automate patch management - WSUS, Ansible, or SCCM.
+    Harden Systems Against Exploitation - Lynis: Hardens Linux systems, CIS Benchmarks.
+    Monitor for Exploitation Attempts - Use intrusion detection/prevention systems - Snort, OSSEC.
+    Detect and Prevent Privilege Escalation - Sysmon: Detects privilege escalation, CrowdStrike Falcon, Carbon Black.
+    Protect Web Applications - ModSecurity, Cloudflare WAF.
+
+5. Installation --> Installs malware or a backdoor on the compromised system.
+    
