@@ -54,4 +54,31 @@
     Protect Web Applications - ModSecurity, Cloudflare WAF.
 
 5. Installation --> Installs malware or a backdoor on the compromised system.
-    
+    Remote Access Tools (RATs) - njRAT, Quasar RAT, DarkComet.
+    Persistence Tools - PowerSploit, Empire.
+    Advanced Payload Installation - Cymothoa.
+  Defensive Actions  :
+    Detect and Block Malicious Files - Microsoft Defender for Endpoint, CrowdStrike Falcon, or Carbon Black, Tripwire.
+    Monitor Registry Changes - Sysmon, OSSEC.
+    Detect and Remove Web Shells - ModSecurity: Detects and blocks malicious uploads, ClamAV.
+    Prevent Remote Access Tools - Suricata : Detects RAT communication patterns.
+    Audit Scheduled Tasks and Services 
+
+6. Command and Control (C2) --> The compromised system establishes communication with the attacker’s C2 server to receive instructions or exfiltrate data.
+    C2 Frameworks - Metasploit, Silver, Cobalt, Empire.
+    RATs (Remote Access Trojans) - njRAT, Quasar RAT, DarkComet.
+    Web-Based C2 Tools - PowerShell Web Delivery.
+    Steganography-Based C2 - Invoke-Stealth, StegoSploit.
+    Social Media and Cloud-Based C2 - CloudC@, Twittor.
+  Defensive Actions  :
+    Monitor Network Traffic - Zeek (formerly Bro), Wireshark.
+    Block Known Malicious IPs and Domains
+    Deploy DNS Filtering - Pi-hole(Blocks requests to known malicious domains), Cloudflare Gateway
+    Use Intrusion Detection and Prevention Systems (IDS/IPS) - Snort, Suricata.
+    Detect Obfuscated Scripts - YARA Rules(Detect malicious or obfuscated files), Cuckoo Sandbox
+    Implement Network Segmentation - Firewall Rules: Isolate sensitive systems, VLANs: Enforce segmentation.
+
+7. Actions on Objectives --> attacker achieves their goal, such as stealing data, encrypting files (ransomware), or disrupting operations.
+  Defensive Actions  :
+    Implement data loss prevention (DLP) solutions to detect exfiltration attempts.
+    Continuously monitor and audit user activity for suspicious behavior.
