@@ -1,0 +1,36 @@
+Information gathering
+  Nmap  --> Network Scanning. Scans networks for open ports, services, and vulnerabilities.
+  Shodan  --> Finds exposed devices, cameras, databases, and more on the internet. Identifies open ports and services for publicly accessible IPs.
+  Maltego  --> Visual link analysis of relationships between people, domains, emails, IPs, etc.
+  TheHarvester  --> Collects subdomains, emails, IPs, and hosts from public sources.
+  Recon-NG  --> Automates OSINT collection on domains, companies, people, and emails.
+  OSINT Framework   --> A web-based collection of OSINT tools and resources for recon.
+  Gobuster --> Bruteforces directories and subdomains for hidden files, APIs, and admin panels.
+  CentralOPS  --> Provides a web-based interface for WHOIS lookups, traceroutes, DNS records.
+
+Web Application assessment
+  OWASP ZAP --> Automated vulnerability scanning for web applications. Intercepts, modifies, and replays HTTP/S requests. 
+    Identifies common vulnerabilities like SQL Injection, XSS, and CSRF.
+  Burp Suite  --> Captures, modifies, and replays HTTP requests. Automated & manual testing for SQLi, XSS, CSRF, etc. Fuzzing & Brute Force Testing on login pages and APIs.
+  Nikto  --> Scans web servers for misconfigurations, outdated software, and security flaws. Detects Apache, Nginx, IIS, and other web servers for vulnerabilities.
+  App Sider  --> Detects OWASP Top 10 vulnerabilities. Scans APIs, Single Page Applications (SPA), and web apps.
+
+Vulnerability Scanning
+  OpenVAS --> scanner that detects misconfigurations, outdated software, and security flaws in network devices, servers, and web applications. 
+    Provides a large database of known vulnerabilities.
+  Nessus  --> Commercial vulnerability scanner used by enterprises. Scans for unpatched software, misconfigurations, privilege escalation risks, and compliance violations.
+  Appscan  --> Detects SQL Injection, Cross-Site Scripting (XSS), authentication flaws, and API security issues.
+
+Exploitation
+  Burp Suite  --> Used for manually exploiting web vulnerabilities such as SQL Injection, Cross-Site Scripting, Server-Side Request Forgery, and Authentication Bypass.
+    Intercepts, modifies, and replays HTTP/S requests to find security flaws.
+  Metasploit  --> Automates exploitation of unpatched software, misconfigurations, and privilege escalation. Pre-built exploits for Windows, Linux, and network devices.
+  SQL Map  --> Automates SQL Injection (SQLi) to extract data, gain admin access, and take control of databases.
+  ExploitDB  --> A huge collection of public exploits and proof-of-concept (PoC) scripts.
+
+Password Cracking
+  JohntheRipper  --> Cracks hashed passwords stored in files. Uses dictionary attacks, brute-force, and rainbow tables.
+  Hydra  --> Online Password Cracking. Brute-forces login credentials for web apps, SSH, FTP, RDP, and other services.
+  Hashcat  --> Cracks hashed passwords using GPU acceleration for fast cracking. 
+    Supports brute-force, dictionary, hybrid, and mask attacks. Works with MD5, SHA-1, SHA-256, NTLM, WPA2, bcrypt, and more.
+  
