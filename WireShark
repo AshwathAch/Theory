@@ -11,3 +11,14 @@ Extracting Passwords from HTTP --> http contains "password="
 Follow TCP/UDP Streams (Reconstruct Conversations)
 Extract Transferred Files from Network Traffic --> File → Export Objects → HTTP/FTP/SMB. (Save files foe malware analysis).
 Detect ARP Spoofing (MITM Attack) --> arp.duplicate-address-detected
+
+Common anomalies:
+Port Scanning or Reconnaissance  -->  Frequent SYN packets (SYN scan), ICMP Echo Requests (Ping scans)
+High Frequency DNS Requests
+Large Amounts of Traffic from One IP
+Unusual Protocols --> Telnet, FTP
+ARP Spoofing/Poisoning  -->  Inconsistent MAC Addresses
+Session Hijacking  -->  Unexpected TCP Resets (RST), Unusual Sequence Numbers
+Malicious Payloads in HTTP or FTP Traffic  -->  Suspicious HTTP Requests/Responses, File Transfers Over FTP.
+Beaconing and C2 (Command and Control) Communication  -->  Regular Patterns in Traffic:
+Traffic to VPN Servers
