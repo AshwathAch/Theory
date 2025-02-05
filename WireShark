@@ -1,0 +1,13 @@
+Filter by IP Address --> ip.addr == 192.168.1.10
+Filter by Protocol --> http, tcp, udp, dns, icmp
+Filter by Port --> tcp.port == 80  # HTTP traffic, udp.port == 53  # DNS queries, tcp.port == 22  # SSH traffic
+Filter by MAC Address --> eth.addr == 00:1A:2B:3C:4D:5E
+Filter by Malicious Traffic --> 
+  http.request.method == "POST"
+  dns.qry.name contains "malware.com"
+  tcp.flags.syn == 1 && tcp.flags.ack == 0
+Detecting a SYN Flood Attack --> tcp.flags.syn == 1 && tcp.flags.ack == 0
+Extracting Passwords from HTTP --> http contains "password="
+Follow TCP/UDP Streams (Reconstruct Conversations)
+Extract Transferred Files from Network Traffic --> File → Export Objects → HTTP/FTP/SMB. (Save files foe malware analysis).
+Detect ARP Spoofing (MITM Attack) --> arp.duplicate-address-detected
