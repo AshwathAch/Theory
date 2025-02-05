@@ -95,12 +95,12 @@ Send raw IP packets with no TCP/UDP/ICMP headers. --> --raw -d x (X size of raw 
 
 Feature	                                                                Available in Nmap	         Available in hping3
 Host Discovery (Ping, Traceroute)                                              	✅                        	✅
-Port Scanning	                                                                 ✅	                        ✅
-SYN, ACK, UDP Scans	                                                          ✅	                        ✅
-Service & Version Detection	                                                  ✅	                        ❌
+Port Scanning	                                                                  ✅	                        ✅
+SYN, ACK, UDP Scans	                                                            ✅	                        ✅
+Service & Version Detection	                                                    ✅	                        ❌
 OS Detection	                                                                  ✅	                        ❌
 Vulnerability Scanning (NSE Scripts)	                                          ✅                          ❌
 Firewall/IDS Evasion	                                                          ✅                        	✅
 Packet Crafting (Custom Flags, Payloads, TTL, IP Spoofing)                    	❌	                        ✅
 Flood Attacks (Stress Testing, DoS Simulation)                                	❌	                        ✅
-RAW Mode (Send Custom Data Packets)	                                          ❌	                        ✅
+RAW Mode (Send Custom Data Packets)	                                            ❌	                        ✅
