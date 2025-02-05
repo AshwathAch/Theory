@@ -59,7 +59,7 @@
 
 NMAP Commands
 Basic Scanning Flags
-  -sS (TCP SYN Scan)  :  Performs a stealth scan by sending SYN packets and waiting for responses.
+  -sS (TCP SYN Scan)  :  Performs a stealth scan by sending SYN packets and waiting for responses, Sends packets one at a time.
   -sT (TCP Connect Scan)  :  Completes the full TCP handshake; used when SYN scan isn’t possible.
   -sU (UDP Scan)  :  Scans for open UDP ports.
   -sP (Ping Scan)  :  Checks if hosts are up without scanning for open ports.
@@ -77,9 +77,12 @@ Port Scanning
 
 Aggressive Scanning
   -A (Aggressive Scan)  :  Combines OS detection, version detection, script scanning, and traceroute.
+  --script vuln  :  vulnerability detection scripts.
+  --script http-* -p 80,443  : Checks HTTP vulnerabilities.
 
 Evading Firewalls and IDS
   -f (Fragment Packets)  :  Sends fragmented packets to evade packet inspection.
   -D (Decoy Scan)  :  Masks your real IP address by spoofing decoys.
+  --randomize-hosts -T3 : Randomizes scan order to avoid detection.
   --source-port  :  Spoofs the source port to bypass firewalls.
   --script  :  Specifies a custom or specific script from the Nmap Scripting Engine (NSE).
