@@ -1,0 +1,15 @@
+Step 1: Identify Available Disks  -->  lsblk
+Step 2: Create a Physical Volume (PV)  -->  sudo pvcreate /dev/xxx
+Step 3: Create a Volume Group (VG)  -->  sudo vgcreate vgname /dev/xxx
+Step 4: Create a Logical Volume (LV)  -->  sudo lvcreate -L xG -n lv_storage_name vgname
+Step 5: Format the Logical Volume  -->  sudo mkfs.ext4 /dev/vgname/lv_storage_name
+Step 6: Mount the File System  -->  sudo mkdir /mnt/storage
+                                    sudo mount /dev/vgname/lv_storage_name /mnt/storage
+Extend the LV  -->sudo lvextend -L+10G /dev/vgname/lv_storage_name
+Resize the Filesystem  -->  sudo resize2fs /dev/vgname/lv_storage_name
+Reduce Logical Volume(Unmount first)  -->  sudo umount /mnt/storage
+                                           sudo e2fsck -f /dev/vgname/lv_storage_name
+                                           sudo resize2fs /dev/vgname/lv_storage_name 15G
+Reduce the Logical Volume  -->  sudo lvreduce -L 15G /dev/vg_data/lv_storage
+Remount the Filesystem  -->  sudo mount /dev/vg_data/lv_storage /mnt/storage
+Remove LV --> unmount, lvremove, vgremove, pvremove
