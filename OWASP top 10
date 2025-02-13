@@ -1,69 +1,79 @@
 2021
 Broken Access Control
-  Description: Occurs when restrictions on authenticated users are not properly enforced.
+  Description:
+  Occurs when restrictions on authenticated users are not properly enforced.
   Mitigation:
   Implement role-based access controls (RBAC).
   Deny access by default; only permit necessary actions.
   Regularly test access controls to ensure proper enforcement.
 
 Cryptographic Failures
-  Description: This involves improper protection of sensitive information through weak cryptography.
+  Description: 
+  This involves improper protection of sensitive information through weak cryptography.
   Mitigation:
   Use strong, industry-standard encryption algorithms.
   Ensure data is encrypted both at rest and in transit.
   Avoid using deprecated or weak cryptographic protocols.
 
 Injection
-  Description: Happens when untrusted data is sent to an interpreter as part of a command or query, leading to unintended execution.
+  Description: 
+  Happens when untrusted data is sent to an interpreter as part of a command or query, leading to unintended execution.
   Mitigation:
   Use parameterized queries and prepared statements.
   Validate and sanitize all user inputs.
   Employ input validation libraries or frameworks.
 
 Insecure Design
-  Description: Refers to flaws in the application's design that lead to security vulnerabilities.
+  Description:
+  Refers to flaws in the application's design that lead to security vulnerabilities.
   Mitigation:
   Incorporate threat modeling during the design phase.
   Adopt secure design patterns and principles.
   Conduct regular security reviews of the application's architecture.
 
 Security Misconfiguration
-  Description: Arises from improper configuration of security settings in applications, servers, or databases.
+  Description: 
+  Arises from improper configuration of security settings in applications, servers, or databases.
   Mitigation:
   Implement a repeatable hardening process for deployments.
   Disable unnecessary features and services.
   Regularly update and patch systems and applications.
 
 Vulnerable and Outdated Components
-  Description: Using components with known vulnerabilities can compromise application security.
+  Description: 
+  Using components with known vulnerabilities can compromise application security.
   Mitigation:
   Maintain an inventory of all components and their versions.
   Regularly update components to their latest versions.
   Monitor for and address any reported vulnerabilities in components.
 
 Identification and Authentication Failures
-  Description: Weaknesses in authentication mechanisms can allow attackers to compromise user identities.
+  Description: 
+  Weaknesses in authentication mechanisms can allow attackers to compromise user identities.
   Mitigation:
   Enforce multi-factor authentication (MFA).
   Implement secure password policies and storage mechanisms.
   Invalidate session tokens upon logout or inactivity.
 
 Software and Data Integrity Failures
-  Description: Occurs when software updates, critical data, or CI/CD pipelines are not protected against integrity violations.
+  Description:
+  Occurs when software updates, critical data, or CI/CD pipelines are not protected against integrity violations.
   Mitigation:
   Use digital signatures to verify the integrity of software and data.
   Implement controls to prevent unauthorized access to CI/CD pipelines.
   Regularly back up critical data and verify its integrity.
 
 Security Logging and Monitoring Failures
-  Description: Inadequate logging and monitoring can delay the detection of security breaches.
+  Description: 
+  Inadequate logging and monitoring can delay the detection of security breaches.
   Mitigation:
   Ensure all security-relevant events are logged.
   Regularly review and analyze logs for suspicious activities.
   Establish an incident response plan for detected security events.
 
 Server-Side Request Forgery (SSRF)
-  Description: Occurs when an application fetches a remote resource without validating the user-supplied URL.
+  Description: 
+  Occurs when an application fetches a remote resource without validating the user-supplied URL.
   Mitigation:
   Sanitize and validate all user inputs used in URL requests.
   Implement network segmentation to limit internal resource access.
