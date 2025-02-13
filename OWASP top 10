@@ -7,6 +7,7 @@ Broken Access Control
   Deny access by default; only permit necessary actions.
   Regularly test access controls to ensure proper enforcement.
   Eg  : Normal user enables himself with admin privileges. 
+
 Cryptographic Failures
   Description: 
   This involves improper protection of sensitive information through weak cryptography.
