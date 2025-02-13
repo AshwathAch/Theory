@@ -6,7 +6,7 @@ Broken Access Control
   Implement role-based access controls (RBAC).
   Deny access by default; only permit necessary actions.
   Regularly test access controls to ensure proper enforcement.
-
+  Eg  : Normal user enables himself with admin privileges. 
 Cryptographic Failures
   Description: 
   This involves improper protection of sensitive information through weak cryptography.
@@ -14,6 +14,7 @@ Cryptographic Failures
   Use strong, industry-standard encryption algorithms.
   Ensure data is encrypted both at rest and in transit.
   Avoid using deprecated or weak cryptographic protocols.
+  Eg  :  storeing passwords in plain text
 
 Injection
   Description: 
@@ -22,6 +23,7 @@ Injection
   Use parameterized queries and prepared statements.
   Validate and sanitize all user inputs.
   Employ input validation libraries or frameworks.
+  Eg  :  ' OR '1'='1
 
 Insecure Design
   Description:
@@ -30,6 +32,7 @@ Insecure Design
   Incorporate threat modeling during the design phase.
   Adopt secure design patterns and principles.
   Conduct regular security reviews of the application's architecture.
+  Eg  : Application without autentication
 
 Security Misconfiguration
   Description: 
@@ -38,6 +41,7 @@ Security Misconfiguration
   Implement a repeatable hardening process for deployments.
   Disable unnecessary features and services.
   Regularly update and patch systems and applications.
+  Eg  :  default admin username and password.
 
 Vulnerable and Outdated Components
   Description: 
@@ -46,6 +50,7 @@ Vulnerable and Outdated Components
   Maintain an inventory of all components and their versions.
   Regularly update components to their latest versions.
   Monitor for and address any reported vulnerabilities in components.
+  Eg  :  A website uses an outdated version of Apache
 
 Identification and Authentication Failures
   Description: 
@@ -54,6 +59,7 @@ Identification and Authentication Failures
   Enforce multi-factor authentication (MFA).
   Implement secure password policies and storage mechanisms.
   Invalidate session tokens upon logout or inactivity.
+  Eg  :   weak passwords like 123456 or password
 
 Software and Data Integrity Failures
   Description:
@@ -62,6 +68,7 @@ Software and Data Integrity Failures
   Use digital signatures to verify the integrity of software and data.
   Implement controls to prevent unauthorized access to CI/CD pipelines.
   Regularly back up critical data and verify its integrity.
+  Eg  :  application downloads updates from an unverified source.
 
 Security Logging and Monitoring Failures
   Description: 
@@ -70,6 +77,7 @@ Security Logging and Monitoring Failures
   Ensure all security-relevant events are logged.
   Regularly review and analyze logs for suspicious activities.
   Establish an incident response plan for detected security events.
+  Eg  :  does not log failed login attempts, the attack goes undetected.
 
 Server-Side Request Forgery (SSRF)
   Description: 
