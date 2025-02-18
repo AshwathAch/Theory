@@ -5,4 +5,5 @@ Gobuster --> Crwal pages - (gobuster dir -u http://example.com -w /usr/share/wor
 Sublist3r --> Find subdoamins
 Owasp --> Find vulnerabilities
 Nikto --> Find vulnerabilty - nikto -h http://example.com
+Nessus --> /bin/systemctl start nessusd.service - https://kali:8834/
 WEBAPP - (pentest-tools, wappalyzer) --> Vulnerability 
