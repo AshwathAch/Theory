@@ -1,5 +1,6 @@
 Nmap --> Find all open ports
-Gobuster --> Crwal pages
+Gobuster --> Crwal pages - gobuster dir -u http://example.com -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 Sublist3r --> Find subdoamins
 Owasp --> Find vulnerabilities
-Nikto --> Find vulnerabilty
+Nikto --> Find vulnerabilty - nikto -h http://example.com
+WEBAPP - (pentest-tools, wappalyzer) --> Vulnerability 
