@@ -7,3 +7,6 @@ Owasp --> Find vulnerabilities
 Nikto --> Find vulnerabilty - nikto -h http://example.com
 Nessus --> systemctl start nessusd.service - https://kali:8834/
 WEBAPP - (pentest-tools, wappalyzer) --> Vulnerability 
+
+For login or forgot pass rate limitation - Burpsuite 
+  
