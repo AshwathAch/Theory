@@ -1,3 +1,9 @@
 Secure flag is not set in the cookie : JSESSIONID
   If the Secure flag is not set on the JSESSIONID cookie, the session ID can be transmitted over unencrypted HTTP connections, 
   making it vulnerable to session hijacking via man-in-the-middle (MITM) attacks.
+
+Missing X-Frame-Options (Clickjacking Risk)
+  Clickjacking – An attacker can embed your website inside an invisible iframe and trick users into clicking malicious actions.
+
+Missing X-XSS-Protection (Cross-Site Scripting Risk)
+  XSS (Cross-Site Scripting) – Attackers can inject malicious JavaScript that executes in the victim’s browser.
