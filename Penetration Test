@@ -1,7 +1,7 @@
 Nmap --> Find all open ports, sudo nmap -p 80,443 --script http-vuln* , http-server-header -sV <target>
 whatweb --> Find technologies - (whatweb -v)
 curl -I https://target-website.com -->  X-Frame-Options: DENY or X-Frame-Options: SAMEORIGIN, is not seen,  the site may be vulnerable.
-Gobuster --> Crwal pages - (gobuster dir -u http://example.com -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt)
+Gobuster --> Crwal pages - (gobuster dir -u http://example.com -w /usr/share/wordlists/<dirbuster/directory-list-2.3-medium.txt)><dirb/common.txt>
 Sublist3r --> Find subdoamins
 Owasp --> Find vulnerabilities
 Nikto --> Find vulnerabilty - nikto -h http://example.com
