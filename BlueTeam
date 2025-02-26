@@ -1,0 +1,45 @@
+1.Security Operations Center (SOC) Analyst
+  Role: Monitors and responds to security alerts in real-time.
+  Analyze logs from SIEM tools (e.g., Splunk, ELK, QRadar).
+  Investigate security alerts and incidents.
+  Identify Indicators of Compromise (IoCs).
+  Escalate threats to higher-level analysts if necessary.
+
+2.Incident Responder
+  Role: Investigates and mitigates cyberattacks.
+  Responsibilities:
+  Identify, contain, and eradicate threats.
+  Perform forensic analysis to understand the attack.
+  Work on post-incident recovery and reporting.
+  Coordinate with other teams (Red Team, Threat Intelligence).
+
+3.Threat Intelligence Analyst
+  Role: Gathers and analyzes cyber threat information.
+  Responsibilities:
+  Monitor dark web forums, hacker groups, and threat feeds.
+  Identify new attack techniques (TTPs).
+  Provide intelligence to SOC analysts and Incident Responders.
+  Help organizations stay ahead of emerging threats.
+
+4.Security Engineer
+  Role: Designs and maintains security systems.
+  Responsibilities:
+  Configure firewalls, IDS/IPS, endpoint protection.
+  Harden network infrastructure.
+  Automate security processes.
+  Patch vulnerabilities in systems and applications.
+    Example Task: Setting up a Web Application Firewall (WAF) to prevent SQL Injection attacks.
+
+5.Security Auditor / Compliance Analyst
+  Role: Ensures security policies and regulations are followed.
+  Responsibilities:
+  Conduct security audits and risk assessments.
+  Ensure compliance with standards (ISO 27001, NIST, GDPR, PCI-DSS).
+  Test security controls and recommend improvements.
+
+6.Vulnerability Management Analyst
+  Role: Identifies and fixes security weaknesses.
+  Responsibilities:
+  Perform vulnerability scans (e.g., Nessus, OpenVAS).
+  Prioritize patching based on risk level.
+  Work with IT teams to fix vulnerabilities.
