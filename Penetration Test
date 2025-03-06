@@ -9,4 +9,4 @@ Nessus --> systemctl start nessusd.service - https://kali:8834/
 WEBAPP - (pentest-tools, wappalyzer) --> Vulnerability 
 <svg onload=alert(1)> “><svg onload=alert(1)// --> Stored xss
 For login or forgot pass rate limitation - Burpsuite 
-  
+Use Burp(Sequencer) to verify random cookie.
