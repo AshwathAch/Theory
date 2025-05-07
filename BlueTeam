@@ -57,7 +57,7 @@ How SIEM Works (Step-by-Step)
 Credential & Access Logs:
 C:\Windows\System32\config\SAM - Stores local password hashes (target for credential dumping attacks).
 C:\Windows\repair\SAM - Backup of user credentials (potential target for attackers).
-C:\Windows\config\config\SECURITY - Holds security policies & access control settings.
+C:\Windows\System32\config\SECURITY - Holds security policies & access control settings.
 
 System & Event Logs:
 C:\Windows\System32\winevt - Stores Windows Event Logs (crucial for SIEM correlation).
